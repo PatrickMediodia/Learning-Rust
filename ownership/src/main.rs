@@ -80,6 +80,3 @@ fn takes_and_gives_back(a_string: String) -> String {
     a_string
 }
 
-// references don't take ownership
-// borrowing the value but not actually taking ownership
-// references are immutable by default
