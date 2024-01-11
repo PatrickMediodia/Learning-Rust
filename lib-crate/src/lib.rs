@@ -1,3 +1,6 @@
+// To learn more about modules, see the link below
+// https://www.youtube.com/watch?v=969j0qnJGi8&ab_channel=Let%27sGetRusty
+
 // define the front_of_house module here but get contents from a different file but same contents in the module
 // we can define the contents of the parent module, create an .rs file with the same name
 mod front_of_house;
@@ -26,7 +29,8 @@ mod back_of_house {
     /* 
     fn fix_incorrect_order() {
         cook_order();
-        //super allows you to reference the parent module
+        // super allows you to reference the parent module
+        // in this case, back_of_house is a child to the parent module lib-crate
         super::serve_order();
     }
 
