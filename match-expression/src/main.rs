@@ -39,6 +39,7 @@ fn plus_one(x: Option<i32>) -> Option<i32> {
     // ex. rust prevents us from forgetting to explicitly handle the None case, it protects us from assuming that we have a value when we might have null
     match x {
         None => None,
+        // you have to wrap it in some because its return value is optional
         Some(i) => Some(i + 1),
     }
 }
