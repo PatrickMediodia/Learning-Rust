@@ -54,6 +54,13 @@ fn main() {
 
     let home = IpAddr::V4(127, 0, 0, 1);
     let loopback = IpAddr::V6(String::from("::1"));
+
+    let x: i8 = 5;
+    let y: Option<i8> = None;
+
+    // if y is not none, use that value
+    // if y is none, use the default value -> unwrap_or(default)
+    let sum = x + y.unwrap_or(0);
 }
 
 // implement the fmt::Display method for IpAddrKind enum
